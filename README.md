@@ -5,11 +5,6 @@ CSC Bridge PG Integration Kit in PHP
 PHP version 5.3 and above
 
 
-Instructions:
->> Reset your password by using the link you have recieved via email.
->> Supports PHP version 5.3 and above.
->> Login to following Merchant Center Portal: "portal.csccloud.in" and follow the below steps:
-
       Generate Connect Config. File
         1.Click on “CSC Connect”.
         2.Provide the Application Name, Call Back Url and upload the application logo and click on save button to add the application.
@@ -29,7 +24,7 @@ Use these configuration file into your code.
 The illustrated code sample below provides the understanding of using the php integration kit.
 
 Step 1. Create an encrypted payment request as in example file. (payment.php)
-
+<code>
 		<?php
 		require_once 'includes/BridgePGUtil.php';
 
@@ -56,7 +51,7 @@ Step 1. Create an encrypted payment request as in example file. (payment.php)
 			   <input type="hidden" name="message" value="<?=$enc_text;?>" />
 			   <input type="submit" value="Pay" />
 		  </form>
-
+</code>
 
 * Following is the wrapper for accessing bridge. (BridgePGUtil.php)
 
