@@ -1,7 +1,6 @@
 <?php
 /**
  * Author: Sandeep Kumar
- * E-Mail: sandeep.kumar.india@gmail.com
  * Date: 07/08/2016
  * Version: 1.36
  */
