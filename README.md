@@ -54,7 +54,7 @@ Step 1. Create an encrypted payment request as in example file. (payment.php)
 </code>
 
 * Following is the wrapper for accessing bridge. (BridgePGUtil.php)
-
+```php
 		<?php include_once __DIR__."/BridgePG.php";
 		class BridgePGUtil {
 		
@@ -163,10 +163,10 @@ Step 1. Create an encrypted payment request as in example file. (payment.php)
 				array_unshift($vals, $tens);
 			return implode("", $vals);
 		} }   ?>
-        
+```    
 
 Step 2. Process pay response to get status of payment as in sample file. (payment_response.php)
-
+```php
 		<?php
 		require_once 'includes/ BridgePGUtil.php';
 
@@ -179,4 +179,4 @@ Step 2. Process pay response to get status of payment as in sample file. (paymen
 
 		Decrypted Values: <?php $bridge_message; ?>
 
-
+```
