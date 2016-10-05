@@ -24,7 +24,7 @@ Use these configuration file into your code.
 The illustrated code sample below provides the understanding of using the php integration kit.
 
 Step 1. Create an encrypted payment request as in example file. (payment.php)
-<code>
+```php
 		<?php
 		require_once 'includes/BridgePGUtil.php';
 
@@ -51,7 +51,7 @@ Step 1. Create an encrypted payment request as in example file. (payment.php)
 			   <input type="hidden" name="message" value="<?=$enc_text;?>" />
 			   <input type="submit" value="Pay" />
 		  </form>
-</code>
+```
 
 * Following is the wrapper for accessing bridge. (BridgePGUtil.php)
 ```php
