@@ -6,7 +6,11 @@
  * Version: 1.36
  */
 
+include_once __DIR__ . "/bridge_config.php";
 include_once __DIR__ . "/BridgePG.php";
+
+defined('MERCHANT_ID')   OR exit('MERCHANT_ID not defined in Environment. Please include bridge config file(s)');
+
 class BridgePGUtil {
 	
 	private $bridgePG;
@@ -19,7 +23,7 @@ class BridgePGUtil {
 	
 	private static function get_default_parameters(){
 		$brj_params = array(
-			'merchant_id'            => '11121',
+			'merchant_id'            => MERCHANT_ID,
 			'merchant_txn'           => 'P121' . time() . rand(10,99),//'2016-06-21 18:11:58',
 			'merchant_txn_date_time' => date('Y-m-d H:i:s'),//'2016-06-21 18:11:58',
 			'product_id'             => '1112101',
