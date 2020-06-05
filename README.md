@@ -47,7 +47,7 @@ Step 1. Create an encrypted payment request as in example file. (payment.php)
 		?>
 
 
-		  <form method="post" action="http://pay.csccloud.in/pay/m2b/<?php echo $frac;?>">
+		  <form method="post" action="http://payuat.csccloud.in/pay/m2b/<?php echo $frac;?>">
 			   <input type="hidden" name="message" value="<?=$enc_text;?>" />
 			   <input type="submit" value="Pay" />
 		  </form>
